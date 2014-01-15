@@ -39,16 +39,16 @@
 			type="editor"
 		/>
 		<field
-			default="yes"
+			default="1"
 			description=""
 			label="Published"
 			name="published"
 			type="radio"
 		>
 			<option
-				value="no">No</option>
+				value="0">0</option>
 			<option
-				value="yes">Yes</option>
+				value="1">1</option>
 		</field>
 	</fieldset>
 </form>

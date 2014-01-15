@@ -24,6 +24,8 @@ class HelloworldsViewHelloworld extends JViewLegacy
 	{
 		// Assign data to the view
 		$this->item = $this->get('Item');
+		$db = JFactory::getDBO();
+		$this->item->category = $db->setQuery('SELECT #__categories.title FROM #__categories WHERE #__categories.id = "'.$this->item->category.'"')->loadResult();
 
 		// Check for errors.
 		if (count($errors = $this->get('Errors'))):

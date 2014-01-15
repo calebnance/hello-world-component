@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="2.5.0" method="upgrade">
 	<name>COM_HELLOWORLDS</name>
-	<creationDate>February 17, 2013</creationDate>
+	<creationDate>March 09, 2013</creationDate>
 	<author>Caleb Nance</author>
 	<authorEmail>joomla.calebnance@gmail.com</authorEmail>
 	<authorUrl>www.codelydia.com</authorUrl>
 	<copyright>Copyright (C) 2013. All Rights Reserved</copyright>
 	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
-	<version>0.5.2</version>
+	<version>0.5.3</version>
 	<description><![CDATA[
-		<h1>Hello World (v.0.5.2)</h1>
+		<h1>Hello World (v.0.5.3)</h1>
 		<div style="clear: both;"></div>
-		<p>This component was created by Black Rabbit Joomla Component Creator for Free. <strong>Built for Joomla 2.5.0.</strong></p>
+		<p>This component was built using Black Rabbit Component Creator for Free. <strong>Built for Joomla 2.5.0.</strong></p>
 		<p>Created by <a href="http://www.codelydia.com" target="_blank">Caleb Nance | www.codelydia.com</a>
 	]]></description>
 
@@ -50,6 +50,11 @@
 	</files>
 	<administration>
 		<menu>COM_HELLOWORLDS_MENU</menu>
+		<submenu>
+			<!-- Instead of link you can specify individual link attributes -->
+			<menu option="com_helloworlds" view="helloworlds">COM_HELLOWORLDS_MENU_HELLOWORLDS</menu>
+<menu link="option=com_categories&amp;extension=com_helloworlds">COM_HELLOWORLDS_MENU_MENU_CATEGORIES</menu>
+		</submenu>
 		<files folder="admin">
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>
