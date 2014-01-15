@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_helloworlds/models/rules"
+	addfieldpath="/administrator/components/com_helloworlds/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			class="inputbox validate-title"
+			default=""
+			description=""
+			label="Title"
+			name="title"
+			required="true"
+			size="40"
+			type="text"
+			validate="title"
+		/>
+		<field
+			default=""
+			description=""
+			label="Category"
+			name="category"
+			required="true"
+			extension="com_helloworlds"
+			type="category"
+			validate="category"
+		/>
+		<field
+			default=""
+			description=""
+			label="Description"
+			name="description"
+			filter="safehtml"
+			width="300"
+			type="editor"
+		/>
+		<field
+			default="yes"
+			description=""
+			label="Published"
+			name="published"
+			type="radio"
+		>
+			<option
+				value="no">No</option>
+			<option
+				value="yes">Yes</option>
+		</field>
+	</fieldset>
+</form>
