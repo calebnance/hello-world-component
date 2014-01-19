@@ -2,10 +2,10 @@
 /*------------------------------------------------------------------------
 # helloworld.php - Hello World Component
 # ------------------------------------------------------------------------
-# author	Caleb Nance
-# copyright	Copyright (C) 2013. All Rights Reserved
-# license	GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
-# website	www.codelydia.com
+# author    Caleb Nance
+# copyright Copyright (C) 2013. All Rights Reserved
+# license   GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+# website   www.codelydia.com
 -------------------------------------------------------------------------*/
 
 // No direct access to this file
@@ -16,7 +16,7 @@ jimport('joomla.application.component.modelitem');
 /**
  * Helloworld Model for Helloworlds Component
  */
-class HelloworldsModelHelloworld extends JModelItem
+class HelloworldsModelhelloworld extends JModelItem
 {
 	/**
 	 * Model context string.
@@ -45,9 +45,9 @@ class HelloworldsModelHelloworld extends JModelItem
 	}
 
 	/**
-	 * Method to get helloworld data.
+	 * Method to get Helloworld data.
 	 *
-	 * @param	integer	The id of the helloworld.
+	 * @param	integer	The id of the Helloworld.
 	 *
 	 * @return	mixed	Menu item data object on success, false on failure.
 	 */
@@ -64,6 +64,7 @@ class HelloworldsModelHelloworld extends JModelItem
 				$query = $db->getQuery(true);
 				$query->select('*');
 				$query->from('#__helloworlds_helloworld');
+				$query->where('id = "'.$pk.'"');
 				$db->setQuery($query);
 				$data = $db->loadObject();
 				$this->_item[$pk] = $data;

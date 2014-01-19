@@ -2,10 +2,10 @@
 /*------------------------------------------------------------------------
 # edit.php - Hello World Component
 # ------------------------------------------------------------------------
-# author	Caleb Nance
-# copyright	Copyright (C) 2013. All Rights Reserved
-# license	GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
-# website	www.codelydia.com
+# author    Caleb Nance
+# copyright Copyright (C) 2013. All Rights Reserved
+# license   GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+# website   www.codelydia.com
 -------------------------------------------------------------------------*/
 
 // No direct access to this file
@@ -30,7 +30,7 @@ $params = $this->form->getFieldsets('params');
 		</fieldset>
 	</div>
 	<div>
-		<input type="hidden" name="task" value=".edit" />
+		<input type="hidden" name="task" value="helloworld.edit" />
 		<?php echo JHtml::_('form.token'); ?>
 	</div>
 </form>

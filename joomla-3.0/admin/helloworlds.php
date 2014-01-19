@@ -2,10 +2,10 @@
 /*------------------------------------------------------------------------
 # helloworlds.php - Hello World Component
 # ------------------------------------------------------------------------
-# author	Caleb Nance
-# copyright	Copyright (C) 2013. All Rights Reserved
-# license	GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
-# website	www.codelydia.com
+# author    Caleb Nance
+# copyright Copyright (C) 2013. All Rights Reserved
+# license   GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+# website   www.codelydia.com
 -------------------------------------------------------------------------*/
 
 // No direct access to this file
@@ -35,7 +35,7 @@ jimport('joomla.application.component.controller');
 // Add CSS file for all pages
 $document = JFactory::getDocument();
 $document->addStyleSheet('components/com_helloworlds/assets/css/helloworlds.css');
-$document->addScript('components/com_helloworlds/assets/js/helloworlds.css');
+$document->addScript('components/com_helloworlds/assets/js/helloworlds.js');
 
 // Get an instance of the controller prefixed by Helloworlds
 $controller = JControllerLegacy::getInstance('Helloworlds');

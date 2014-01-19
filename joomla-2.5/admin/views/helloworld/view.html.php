@@ -2,10 +2,10 @@
 /*------------------------------------------------------------------------
 # view.html.php - Hello World Component
 # ------------------------------------------------------------------------
-# author	Caleb Nance
-# copyright	Copyright (C) 2013. All Rights Reserved
-# license	GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
-# website	www.codelydia.com
+# author    Caleb Nance
+# copyright Copyright (C) 2013. All Rights Reserved
+# license   GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+# website   www.codelydia.com
 -------------------------------------------------------------------------*/
 
 // No direct access to this file
@@ -17,10 +17,10 @@ jimport('joomla.application.component.view');
 /**
  * Helloworld View
  */
-class HelloworldsViewHelloworld extends JView
+class HelloworldsViewhelloworld extends JView
 {
 	/**
-	 * display method of Helloworlds view
+	 * display method of Helloworld view
 	 * @return void
 	 */
 	public function display($tpl = null)
@@ -102,7 +102,7 @@ class HelloworldsViewHelloworld extends JView
 		$document->setTitle($isNew ? JText::_('Helloworld :: New :: Administrator') : JText::_('Helloworld :: Edit :: Administrator'));
 		$document->addScript(JURI::root() . $this->script);
 		$document->addScript(JURI::root() . "administrator/components/com_helloworlds/views/helloworld/submitbutton.js");
-		JText::script('Helloworld not acceptable. Error');
+		JText::script('helloworld not acceptable. Error');
 	}
 }
 ?>

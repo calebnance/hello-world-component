@@ -2,10 +2,10 @@
 /*------------------------------------------------------------------------
 # view.html.php - Hello World Component
 # ------------------------------------------------------------------------
-# author	Caleb Nance
-# copyright	Copyright (C) 2013. All Rights Reserved
-# license	GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
-# website	www.codelydia.com
+# author    Caleb Nance
+# copyright Copyright (C) 2013. All Rights Reserved
+# license   GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+# website   www.codelydia.com
 -------------------------------------------------------------------------*/
 
 // No direct access to this file
@@ -17,7 +17,7 @@ jimport('joomla.application.component.view');
 /**
  * HTML Helloworld View class for the Helloworlds Component
  */
-class HelloworldsViewHelloworld extends JView
+class HelloworldsViewhelloworld extends JView
 {
 	// Overwriting JView display method
 	function display($tpl = null)

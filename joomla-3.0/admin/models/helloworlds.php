@@ -2,10 +2,10 @@
 /*------------------------------------------------------------------------
 # helloworlds.php - Hello World Component
 # ------------------------------------------------------------------------
-# author	Caleb Nance
-# copyright	Copyright (C) 2013. All Rights Reserved
-# license	GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
-# website	www.codelydia.com
+# author    Caleb Nance
+# copyright Copyright (C) 2013. All Rights Reserved
+# license   GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+# website   www.codelydia.com
 -------------------------------------------------------------------------*/
 
 // No direct access to this file
@@ -16,7 +16,7 @@ jimport('joomla.application.component.modellist');
 /**
  * Helloworlds Model
  */
-class HelloworldsModelHelloworlds extends JModelList
+class HelloworldsModelhelloworlds extends JModelList
 {
 	/**
 	 * Method to build an SQL query to load the list data.

@@ -2,10 +2,10 @@
 /*------------------------------------------------------------------------
 # helloworld.php - Hello World Component
 # ------------------------------------------------------------------------
-# author	Caleb Nance
-# copyright	Copyright (C) 2013. All Rights Reserved
-# license	GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
-# website	www.codelydia.com
+# author    Caleb Nance
+# copyright Copyright (C) 2013. All Rights Reserved
+# license   GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+# website   www.codelydia.com
 -------------------------------------------------------------------------*/
 
 // No direct access to this file
@@ -17,7 +17,7 @@ jimport('joomla.application.component.modeladmin');
 /**
  * Helloworld Model
  */
-class HelloworldsModelHelloworld extends JModelAdmin
+class HelloworldsModelhelloworld extends JModelAdmin
 {
 	/**
 	 * Method override to check if you can edit an existing record.
@@ -43,7 +43,7 @@ class HelloworldsModelHelloworld extends JModelAdmin
 	 * @return	JTable	A database object
 	 * @since	2.5
 	 */
-	public function getTable($type = 'Helloworld', $prefix = 'HelloworldsTable', $config = array())
+	public function getTable($type = 'helloworld', $prefix = 'HelloworldsTable', $config = array())
 	{
 		return JTable::getInstance($type, $prefix, $config);
 	}
